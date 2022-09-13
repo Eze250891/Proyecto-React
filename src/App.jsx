@@ -1,12 +1,17 @@
 
 import './App.css';
-import Boton from './Components/Boton';
+import Seccion from './pruebas/seccion';
+
 
 function App() {
   return (
-    <div className="App">
-      <Boton/>
-    </div>
+    <>
+    <h1 className="text-3xl text-secondaryColor font-bold underline">
+    Hello world!
+    </h1>
+    <Seccion/>
+    
+    </>
   );
 }
 
