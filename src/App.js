@@ -1,21 +1,11 @@
 
-import './App.css';
-// import Seccion from './pruebas/seccion';
-
-
-import Header from './components/Header';
-
-
 
 
 function App() {
   return (
-    <div className="App">
-
-        <Header/>
-       
-       {/* <Seccion/> */}
-    </div>
+    <h1 className="text-3xl text-secondaryColor font-bold underline">
+    Hello world!
+    </h1>
   );
 }
 
