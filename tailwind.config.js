@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './src/**/*.{js,jsx,ts,tsx}', './node_modules/tw-elements/dist/js/**/*.js',
@@ -13,6 +14,8 @@ module.exports = {
       skinColor: "#ef4444",
       darkSkinColor: "#7f1d1d",
       black: "black",
+      'primary': "#957C65",
+      
      
     },
     extend: {},

@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import Boton from '../imagenes/boton'
+
 
 const Seccion = () => {
   return (
