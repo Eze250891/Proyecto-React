@@ -14,6 +14,7 @@ module.exports = {
       skinColor: "#ef4444",
       darkSkinColor: "#7f1d1d",
       black: "black",
+      darkGrey: "#15141c",
       'primary': "#957C65",
       
      
