@@ -4,12 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'tw-elements';
+import Seccion3 from './components/atoms/seccion3.jsx';
+import Seccion5 from './components/atoms/seccion5.jsx';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+     <Seccion3 />
+     <Seccion5 />
   </React.StrictMode>
 );
 
