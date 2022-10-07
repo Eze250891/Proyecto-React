@@ -16,7 +16,7 @@ module.exports = {
       black: "black",
       darkGrey: "#15141c",
       'primary': "#957C65",
-      
+      backgroundSeccion5: '#957C65',
      
     },
     extend: {},
