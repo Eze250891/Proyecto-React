@@ -1,5 +1,5 @@
-import Card from './Card'
-import ImgCard from './ImgCard'
+import Card from './Card.jsx'
+import ImgCard from './ImgCard.jsx'
 
 
 export const CardSeccion = () => {

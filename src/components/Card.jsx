@@ -1,8 +1,9 @@
+import Modal from './Modal'
+
 const Card = ({value}) => {
 
   return (
-    <div>
-      <a href={value.product} target="_blank" rel="noopener noreferrer">
+    <div data-bs-toggle="modal" data-bs-target={`#id${value.id}`}>
         <div className="transition-all duration-200 ease-in-out cursor-pointer w-auto rounded-2xl shadow-2xl scale-100 sm:shadow-2xl md:shadow-xl xl:shadow-none hover:shadow-2xl hover:scale-104 bg-[#957C65]">
           <div className="flex items-start justify-center w-auto h-auto p-5 overflow-hidden ">
             <img className="object-contain h-auto mt-1 rounded-full w-44 md:w-40 brightness-120" src= {value.img} alt="zapatos" />
@@ -19,7 +20,7 @@ const Card = ({value}) => {
               </p>
           </div>
         </div>
-      </a>
+        <Modal id={`id${value.id}`} name={value.title} image={value.img} cost={value.price} />
     </div>
   )
 }

@@ -15,7 +15,7 @@ module.exports = {
       darkSkinColor: "#7f1d1d",
       black: "black",
       'primary': "#957C65",
-      
+      white: "white"
      
     },
     extend: {},
