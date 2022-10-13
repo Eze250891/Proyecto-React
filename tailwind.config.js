@@ -17,6 +17,8 @@ module.exports = {
       darkGrey: "#15141c",
       'primary': "#957C65",
       backgroundSeccion5: '#957C65',
+      navbarColor: "#72332C",
+      'secondary': "#8E452C"
      
     },
     extend: {},
