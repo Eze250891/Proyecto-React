@@ -1,21 +1,14 @@
-
-import React from "react";
+import {useState} from "react"
 
 import Main from "./components/organisms/Main";
 import Navbar from "./components/organisms/NavBar";
 import Footer from "./components/organisms/Footer";
 import Section3 from './components/organisms/Section3.jsx';
 import Section4 from "./components/organisms/Section4";
-
 import Section5 from './components/organisms/Section5.jsx';
-
 import Cart from "./components/organisms/cart/Cart";
 
-
-
-
-
-function App() {
+ function App() {
   const [showCart, setShowCart] = useState(false);
 
   const [productos, setProductos] = useState([]);
@@ -45,7 +38,6 @@ function App() {
      setProductos([])
    }
 
-function App() {
   return (
     <>
      {showCart === true && 
@@ -85,14 +77,9 @@ function App() {
         <Section4/>
         <Section5/>
         <Footer/>
-        
-        
-
-
-       
+  
     </>
   );
 }
 
 export default App;
-

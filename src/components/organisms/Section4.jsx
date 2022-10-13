@@ -5,7 +5,10 @@ import banner1 from '../../graphics/imagenes/Varios/img1Seccion4.jpg'
 import img3 from '../../graphics/imagenes/Varios/img3Seccion4.jpeg'
 
 
-const Seccion4 = () => {
+
+
+
+const Section4 = () => {
   return (
     <div className='w-screen flex bg-backgroundSeccion5 items-center p-8 gap-3 flex-col  md:flex-row md:justify-center'>
     
@@ -34,4 +37,5 @@ const Seccion4 = () => {
   )
 }
 
-export default Seccion4
+export default Section4
+
