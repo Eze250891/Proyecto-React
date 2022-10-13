@@ -14,11 +14,9 @@ module.exports = {
       skinColor: "#ef4444",
       darkSkinColor: "#7f1d1d",
       black: "black",
-      navbarColor: "#2E120E",
-      fontPrimary: "#957C65",
-      currentColor: "957C65"
-      
-      
+      darkGrey: "#15141c",
+      'primary': "#957C65",
+      backgroundSeccion5: '#957C65',
      
     },
     extend: {},

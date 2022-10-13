@@ -1,0 +1,19 @@
+{
+    "posts": [
+      {"id":1,"img": "CardImg1","title": "leonetti Arezzo","instalments": "$8.300","price": "$24.900","product": "https://www.leonetti.com.ar/productos/zapato-arezzo1"},      
+      {"id":2,"img": "CardImg2","title": "leonetti Faro","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-vicenza-azul/"},
+      {"id":3,"img": "CardImg3","title": "leonetti Azul","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-vicenza-azul/"},
+      {"id":4,"img": "CardImg4","title": "leonetti Boris","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-boris/"},
+      {"id":5,"img": "CardImg5","title": "leonetti Kenai","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-kenai/"},
+      {"id":6,"img": "CardImg6","title": "leonetti Florencia","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-kenai/"},
+      {"id":7,"img": "CardImg7","title": "leonetti Morrison","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-kenai/"},
+      {"id":8,"img": "CardImg8","title": "leonetti Carola","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-kenai/"},
+      {"id":9,"img": "CardImg9","title": "leonetti Roma","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-kenai/"},
+      {"id":10,"img": "CardImg10","title": "leonetti Ronald","instalments": "$8.300","price": "$24.900","product":"https://www.leonetti.com.ar/productos/zapato-kenai/"}
+      
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
