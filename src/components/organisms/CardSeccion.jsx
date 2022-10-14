@@ -1,8 +1,8 @@
-import Card from './Card.jsx'
-import ImgCard from './ImgCard.jsx'
+import Card from '../molecules/Card.jsx'
+import ImgCard from '../JsonServer/Products.jsx'
 
 
-export const CardSeccion1 = () => {
+export const CardSeccion = () => {
   return (
     <>
       <div id='seccion1' className='bg-[#957C65] h-min-screen min-w-min items-center justify-center flex flex-col flex-wrap pb-10'>
@@ -17,4 +17,4 @@ export const CardSeccion1 = () => {
   )
 }
 
-export default CardSeccion1;
+export default CardSeccion;

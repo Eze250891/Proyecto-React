@@ -1,4 +1,4 @@
-import Modal from './Modal'
+import Modal from '../molecules/Modal.jsx'
 
 const Card = ({value}) => {
 
@@ -21,6 +21,7 @@ const Card = ({value}) => {
           </div>
         </div>
         <Modal id={`id${value.id}`} name={value.title} image={value.img} cost={value.price} />
+
     </div>
   )
 }
