@@ -1,17 +1,14 @@
 
 import './App.css';
+import CardSeccion1 from './components/CardSeccion1.jsx';
 
 
 
 
 function App() {
   return (
-    <>
-    <h1 className="text-3xl text-secondaryColor font-bold underline">
-    Hello world!
-    </h1>
-  
-    
+    <>  
+      <CardSeccion1 />
     </>
   );
 }
