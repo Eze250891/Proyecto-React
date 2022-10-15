@@ -4,7 +4,8 @@
 const Modal = (props) => {
 
 
-  const ID= "1",
+  const ID= props.id,
+        modalID= props.modalid,
         name= props.name,
         image = props.image,
         cost=props.cost;
@@ -13,7 +14,7 @@ const Modal = (props) => {
 
   return (
     <div className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto pointer-events-none"
-          id={ID} tabIndex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+          id={modalID} tabIndex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
       <div className=" modal-dialog modal-dialog-centered modal-lg relative w-auto pointer-events-none">
         <div className="modal-content border-none shadow-lg relative flex flex-col bg-white opacity-95 w-full  bg-clip-padding rounded-md outline-none text-current">
           <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 rounded-t-md pointer-events-auto">

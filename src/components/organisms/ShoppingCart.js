@@ -14,7 +14,10 @@ const ShoppingCart = () => {
         
         const {products, cart} = state;
 
-        const addToCart = (id) => dispatch({type: TYPES.ADD_TO_CART, payload: id})
+        const addToCart = (id) => {
+          console.log("este ID " + id)
+          dispatch({type: TYPES.ADD_TO_CART, payload: id})
+        }
 
         const delFromCart = (id, all = false) => {
           if (all) {
