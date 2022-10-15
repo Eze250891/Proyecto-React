@@ -1,10 +1,11 @@
 import Card from '../molecules/Card.jsx'
-import ProductsShopping from '../JsonServer/Products.jsx'
-import { isValidInputTimeValue } from '@testing-library/user-event/dist/utils/index.js'
+//import ProductsShopping from '../JsonServer/Products.jsx'
+// import { isValidInputTimeValue } from '@testing-library/user-event/dist/utils/index.js'
 
 
 export const CardSeccion = (props) => {
  const addToCart=props.addToCart
+ const ProductsShopping=props.products
 
   return (
     <>

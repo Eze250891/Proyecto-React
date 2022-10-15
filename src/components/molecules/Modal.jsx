@@ -47,12 +47,15 @@ const Modal = (props) => {
                   <li>Plantilla acolchada</li>
                   <li>Pulido a mano</li>
               </div>
+              <div className="pointer-events-auto flex justify-center w-auto mt-5">
+              <button className="bg-[#957C65] rounded-xl p-2 text-white " onClick={()=>addToCart(ID)}> COMPRAR </button>
+
+              </div>
 
             </div>
           </div> 
 
-          <div className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end w-2/3 p-4 rounded-b-md pointer-events-auto"> 
-          <button onClick={()=>addToCart(ID)}> Hola</button>
+          <div className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end w-2/3 p-4 rounded-b-md pointer-events-none"> 
           
           </div>
           

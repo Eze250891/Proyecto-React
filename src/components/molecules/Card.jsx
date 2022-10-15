@@ -1,5 +1,5 @@
 import Modal from '../molecules/Modal.jsx'
-import Modal2 from '../molecules/Modal2.jsx'
+
 
 
 const Card = (props) => {
@@ -15,7 +15,7 @@ const Card = (props) => {
 
       <div className="flex-col w-auto p-5 text-center">
         <h2 className="mb-3 font-extralight text-2xl capitalize text-[#fefce8]">{value.title}</h2>
-          <p className="font-sans text-2xl font-light text-[#fefce8]">{value.price}</p>
+          <p className="font-sans text-2xl font-light text-[#fefce8]">${value.price}</p>
       </div>
       <div className="flex-col w-auto p-5 mt-3 font-sans text-center text-zinc-600">
           <p>
