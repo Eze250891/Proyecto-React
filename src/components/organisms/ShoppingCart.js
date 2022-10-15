@@ -6,6 +6,8 @@ import { shoppingInitialState, shoppingReducer } from "../reducer/shoppingReduce
 import CartItem from "../atoms/CartItem"
 import CardSeccion from "./CardSeccion"
 
+import React from "react"
+import Navbar from "./navbar"
 
 
 const ShoppingCart = () => {
@@ -15,7 +17,7 @@ const ShoppingCart = () => {
         const {products, cart} = state;
 
         const addToCart = (id) => {
-          console.log("este ID " + id)
+          
           dispatch({type: TYPES.ADD_TO_CART, payload: id})
         }
 
@@ -29,25 +31,15 @@ const ShoppingCart = () => {
 
         const clearCart= () => dispatch ({type: TYPES.CLEAR_CART})
         
-
+       
   return (
     <>
-  
 
+        <Navbar cart={cart} delFromCart={delFromCart} clearCart={clearCart}/>
+        
         <CardSeccion products={products}addToCart={addToCart}/>
 
-        <h3>Carrito</h3>
-        <div className="bg-primary">
-          {
-            cart.map((item, index) => <CartItem 
-                key={index}
-                data={item}
-                delFromCart={delFromCart}
-            />)
-          }
-
-        </div>
-        <button onClick={() => clearCart()}> Limpiar carrito</button>
+        
     </>
   )
 }
@@ -57,29 +49,3 @@ export default ShoppingCart
 
 
 
-
-{/* <h2>Carrito de pro</h2>
-        <h3>Productos</h3>
-        <div className=" flex flex-wrap justify-between gap-9 bg-primary ">
-          {
-            products.map(product => <Product
-             key={product.id}
-             product={product}
-             addToCart={addToCart}
-            />)
-          }
-           
-
-        </div>
-        <h3>Carrito</h3>
-        <div className="bg-primary">
-          {
-            cart.map((item, index) => <CartItem 
-                key={index}
-                data={item}
-                delFromCart={delFromCart}
-            />)
-          }
-
-        </div>
-        <button onClick={() => clearCart()}> Limpiar carrito</button> */}

@@ -5,6 +5,26 @@ export const shoppingInitialState = {
     products: ProductsShopping,
     cart: []
 }
+// // ESTO ES NUEVO
+// export const visibilityInitialState ={
+//     visibility: false
+// }
+
+// export function toggleVisibility(state,action){
+//     switch (action.type){
+//         case TYPES.TOGGLE_VISIBILITY:{
+//             return true
+//         }
+//         case TYPES.SEE_VISIBILITY:{
+//             return state.visibility
+//         }
+//         default:
+//             return false
+
+//     }
+
+// }
+// //LO DE ARRIBA ES NUEVO
 
 export function shoppingReducer (state, action) {
         switch (action.type) {
