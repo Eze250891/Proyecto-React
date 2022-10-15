@@ -10,7 +10,7 @@ const Card = (props) => {
     <div data-bs-toggle="modal" data-bs-target={`#id${modalValue}`}>
     <div className="transition-all duration-200 ease-in-out cursor-pointer w-auto rounded-2xl shadow-2xl scale-100 sm:shadow-2xl md:shadow-xl xl:shadow-none hover:shadow-2xl hover:scale-104 bg-[#957C65]">
       <div className="flex items-start justify-center w-auto h-auto p-5 overflow-hidden ">
-        <img className="object-contain h-auto mt-1 rounded-full w-44 md:w-40 brightness-120" src= {value.img} alt="zapatos" />
+        <img className="object-contain h-auto mt-1 rounded-full w-44 md:w-40 brightness-120" src={`${value.img}`} alt="zapatos" />
       </div>
 
       <div className="flex-col w-auto p-5 text-center">

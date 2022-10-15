@@ -7,5 +7,6 @@
         REMOVE_ALL_PRODUCTS: "REMOVE_ALL_PRODUCTS",
         CLEAR_CART: "CLEAR_CART",
 
+        READ_STATE: "READ_STATE"
         
     }

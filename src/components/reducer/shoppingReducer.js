@@ -1,33 +1,25 @@
-import { TYPES } from "../actions/action"
+import { TYPES } from "../../actions/action"
 import ProductsShopping from '../JsonServer/Products.jsx'
 
 export const shoppingInitialState = {
-    products: ProductsShopping,
+   // products: ProductsShopping,
+    products: [],
     cart: []
 }
-// // ESTO ES NUEVO
-// export const visibilityInitialState ={
-//     visibility: false
-// }
 
-// export function toggleVisibility(state,action){
-//     switch (action.type){
-//         case TYPES.TOGGLE_VISIBILITY:{
-//             return true
-//         }
-//         case TYPES.SEE_VISIBILITY:{
-//             return state.visibility
-//         }
-//         default:
-//             return false
-
-//     }
-
-// }
-// //LO DE ARRIBA ES NUEVO
 
 export function shoppingReducer (state, action) {
         switch (action.type) {
+            case TYPES.READ_STATE:{
+                
+                return {
+                    
+                    //EN ESTE CASO SE USA ...state para indicar que estoy trabajando sobre ese objeto en particular
+                    ...state,
+                    products: action.payload.products,
+                    cart: action.payload.cart
+                }
+            }
             case TYPES.ADD_TO_CART: {
                 const newItem = state.products.find(product => product.id === action.payload)
                 
