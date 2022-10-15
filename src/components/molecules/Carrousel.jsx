@@ -51,8 +51,10 @@ const options={
 
 const Carrousel = () => {
    
+   
   return (
     <>
+    
     <div className='flex justify-center mt-5'>
         <h3 className='text-2xl font-bold'> Destacado </h3>
     </div>

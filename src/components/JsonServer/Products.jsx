@@ -11,45 +11,45 @@ import CardImg5 from '../../graphics/imagenes/productos/leonetti_kenai1.jpg';
 
 
 
-const ImgCard = [
+const ProductsShopping = [
     {
         id:"1",
         img: CardImg1,
         title: "leonetti arezzo",
-        instalments: "$8.300",
-        price: "$24.900",
+        instalments: "$"+ Math.round(15500/3),
+        price: "15500",
         product: "https://www.leonetti.com.ar/productos/zapato-arezzo1",
     },
     {
         id:"2",
         img: CardImg2,
         title: "leonetti faro",
-        instalments: "$8.300",
-        price: "$24.900",
+        instalments: "$"+ Math.round(21200/3),
+        price: "21200",
         product:"https://www.leonetti.com.ar/productos/zapato-faro/",
     },
     {
         id:"3",
         img: CardImg3,
         title: "leonetti azul",
-        instalments: "$8.300",
-        price: "$24.900",
+        instalments: "$"+ Math.round(24900/3),
+        price: "24900",
         product:"https://www.leonetti.com.ar/productos/zapato-vicenza-azul/",
     },
     {
         id:"4",
         img: CardImg4,
         title: "leonetti boris",
-        instalments: "$8.300",
-        price: "$24.900",
+        instalments: "$"+ Math.round(33150/3),
+        price: "33150",
         product:"https://www.leonetti.com.ar/productos/zapato-boris/",
     },
     {
         id:"5",
         img: CardImg5,
         title: "leonetti kenai",
-        instalments: "$8.300",
-        price: "$24.900",
+        instalments: "$"+ Math.round(52000/3),
+        price: "52000",
         product:"https://www.leonetti.com.ar/productos/zapato-kenai/",
     },
     // {
@@ -94,4 +94,4 @@ const ImgCard = [
     // }
  ];
 
- export default ImgCard;
+ export default ProductsShopping;

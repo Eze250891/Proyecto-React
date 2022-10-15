@@ -5,6 +5,7 @@ import Seccion3 from './components/atoms/seccion3.jsx';
 import Seccion5 from './components/atoms/seccion5.jsx';
 import CardSeccion from "./components/organisms/CardSeccion";
 import Carrousel from "./components/molecules/Carrousel";
+import ShoppingCart from "./components/organisms/ShoppingCart";
 
 
 
@@ -12,10 +13,7 @@ import Carrousel from "./components/molecules/Carrousel";
 function App() {
   return (
     <>
-    <CardSeccion/>
-    <Carrousel/>
-
-
+    <ShoppingCart/>
     </>
   );
 }

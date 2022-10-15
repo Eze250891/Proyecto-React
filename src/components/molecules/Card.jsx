@@ -1,9 +1,14 @@
 import Modal from '../molecules/Modal.jsx'
+import Modal2 from '../molecules/Modal2.jsx'
 
-const Card = ({value}) => {
 
+const Card = (props) => {
+  const value= props.value
+  const addToCart= props.addToCart
   return (
-    <div data-bs-toggle="modal" data-bs-target={`#id${value.id}`}>
+    
+  <div data-bs-toggle="modal" data-bs-target={`#id${value.id}`}>
+   
         <div className="transition-all duration-200 ease-in-out cursor-pointer w-auto rounded-2xl shadow-2xl scale-100 sm:shadow-2xl md:shadow-xl xl:shadow-none hover:shadow-2xl hover:scale-104 bg-[#957C65]">
           <div className="flex items-start justify-center w-auto h-auto p-5 overflow-hidden ">
             <img className="object-contain h-auto mt-1 rounded-full w-44 md:w-40 brightness-120" src= {value.img} alt="zapatos" />
@@ -11,7 +16,7 @@ const Card = ({value}) => {
   
           <div className="flex-col w-auto p-5 text-center">
             <h2 className="mb-3 font-extralight text-2xl capitalize text-[#fefce8]">{value.title}</h2>
-              <p className="font-sans text-2xl font-light text-[#fefce8]">{value.price}</p>
+              <p className="font-sans text-2xl font-light text-[#fefce8]">${value.price}</p>
           </div>
           <div className="flex-col w-auto p-5 mt-3 font-sans text-center text-zinc-600">
               <p>
@@ -19,9 +24,10 @@ const Card = ({value}) => {
                 <span className="text-xs font-bold text-[#fefce8]">Efectivo/Transferencia (5% OFF)</span>
               </p>
           </div>
+          <button className='bg-black text-white' onClick={()=>addToCart(value.id)}>aaaaaaaaa</button>
         </div>
-        <Modal id={`id${value.id}`} name={value.title} image={value.img} cost={value.price} />
-
+      <Modal id={`id${value.id}`} name={value.title} image={value.img} cost={value.price} addToCart={addToCart} />
+  
     </div>
   )
 }

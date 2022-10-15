@@ -1,8 +1,19 @@
 
-const Modal = ({id, name, image, cost}) => {
+
+//const Modal = ({id, name, image, cost, addToCart}) => {
+const Modal = (props) => {
+
+
+  const ID= "1",
+        name= props.name,
+        image = props.image,
+        cost=props.cost;
+  
+        const addToCart= props.addToCart
+
   return (
     <div className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto pointer-events-none"
-          id={id} tabIndex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+          id={ID} tabIndex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
       <div className=" modal-dialog modal-dialog-centered modal-lg relative w-auto pointer-events-none">
         <div className="modal-content border-none shadow-lg relative flex flex-col bg-white opacity-95 w-full  bg-clip-padding rounded-md outline-none text-current">
           <div className="modal-header flex flex-shrink-0 items-center justify-between p-4 rounded-t-md pointer-events-auto">
@@ -18,13 +29,14 @@ const Modal = ({id, name, image, cost}) => {
       
             <div className="flex flex-col w-2/4">
               <div className="flex justify-center h-1/4">
-                <h1 className="font-extralight text-xl lg:text-2xl capitalize text-black">
+                <h1 className="font-extralight text-xl lg:text-2xl capitalize text-black pointer-events-auto">
                 {name}
+                
                 </h1>
               </div>
               <div className="flex justify-center h-1/4">
                 <h2 className="font-sans text-2xl font-light text-black">
-                  {cost}
+                  ${cost}
                 </h2>
               </div>
               <div className="flex flex-col justify-center w-auto mx-auto text-sm list-none">
@@ -39,7 +51,8 @@ const Modal = ({id, name, image, cost}) => {
           </div> 
 
           <div className="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end w-2/3 p-4 rounded-b-md pointer-events-auto"> 
-          <button> Hola</button>
+          <button onClick={()=>addToCart(ID)}> Hola</button>
+          
           </div>
           
         </div>
