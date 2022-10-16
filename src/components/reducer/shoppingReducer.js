@@ -10,6 +10,12 @@ export const shoppingInitialState = {
 
 export function shoppingReducer (state, action) {
         switch (action.type) {
+            case TYPES.UPDATE_STATE:{
+                return{
+                    ...state,
+                    cart:[]
+                }
+            }
             case TYPES.READ_STATE:{
                 
                 return {

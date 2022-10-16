@@ -6,6 +6,7 @@ const Card = (props) => {
   const value= props.value
   const modalValue= props.modalValue
   const addToCart= props.addToCart
+
   return (
     <div data-bs-toggle="modal" data-bs-target={`#id${modalValue}`}>
     <div className="transition-all duration-200 ease-in-out cursor-pointer w-auto rounded-2xl shadow-2xl scale-100 sm:shadow-2xl md:shadow-xl xl:shadow-none hover:shadow-2xl hover:scale-104 bg-[#957C65]">
@@ -24,7 +25,9 @@ const Card = (props) => {
           </p>
       </div>
     </div>
-    <Modal modalid={`id${modalValue}`} id = {value.id} name={value.title} image={value.img} cost={value.price} addToCart={addToCart} />
+    
+    {/* <Modal modalid={`id${modalValue}`} id = {value.id} name={value.title} image={value.img} cost={value.price} addToCart={addToCart} /> */}
+    <Modal modalid={`id${modalValue}`} value={value} addToCart={addToCart} />
 
 </div>
 

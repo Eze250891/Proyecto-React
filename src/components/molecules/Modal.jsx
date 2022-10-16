@@ -3,14 +3,19 @@
 //const Modal = ({id, name, image, cost, addToCart}) => {
 const Modal = (props) => {
 
-
-  const ID= props.id,
-        modalID= props.modalid,
-        name= props.name,
-        image = props.image,
-        cost=props.cost;
   
-        const addToCart= props.addToCart
+   const product= props.value,
+         modalID= props.modalid
+  
+  const addToCart= props.addToCart
+
+  // const ID= props.id,
+  //       modalID= props.modalid,
+  //       name= props.name,
+  //       image = props.image,
+  //       cost=props.cost;
+  
+  //       const addToCart= props.addToCart
 
   return (
     <div className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto pointer-events-none"
@@ -25,19 +30,19 @@ const Modal = (props) => {
 
           <div className="relative flex flex-row h-3/4">
             <div className="relative w-5/6 flex justify-center">
-              <img className="object-contain w-auto h-auto md:w-3/4 brightness-120" src= {image} alt="zapatos" />
+              <img className="object-contain w-auto h-auto md:w-3/4 brightness-120" src= {`${product.img}` }alt="zapatos" />
             </div>
       
             <div className="flex flex-col w-2/4">
               <div className="flex justify-center h-1/4">
                 <h1 className="font-extralight text-xl lg:text-2xl capitalize text-black pointer-events-auto">
-                {name}
+                {product.title}
                 
                 </h1>
               </div>
               <div className="flex justify-center h-1/4">
                 <h2 className="font-sans text-2xl font-light text-black">
-                  ${cost}
+                  ${product.price}
                 </h2>
               </div>
               <div className="flex flex-col justify-center w-auto mx-auto text-sm list-none">
@@ -48,7 +53,8 @@ const Modal = (props) => {
                   <li>Pulido a mano</li>
               </div>
               <div className="pointer-events-auto flex justify-center w-auto mt-5">
-              <button className="bg-[#957C65] rounded-xl p-2 text-white " onClick={()=>addToCart(ID)}> COMPRAR </button>
+                {/* CAMBIE EL ADDTOCART(ID) por ADDTOCART(PRODUCT) */}
+              <button className="bg-[#957C65] rounded-xl p-2 text-white " onClick={()=>addToCart(product)}> COMPRAR </button>
 
               </div>
 
