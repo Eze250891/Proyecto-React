@@ -39,48 +39,44 @@ const ShoppingCart = () => {
           updateState()
         }, [])
         
-
+        
         const addToCart = async (product) => {
+          // COMO LA FUNCION ADDTOCART TIENE PETICIONES ESTA BUENO PONERLE EL ASYNC PARA PODER USAR EL AWAIT EN DICHAS PETIS
           
-          const isProductInCart= cart.find(item => item.id === product.id)
-          console.log("Chequeo")
-          console.log(isProductInCart)
+          const isProductInCart= cart.find(item => item.id === product.id)  
+          // Si el producto está en el carrito incremento en 1
           if (isProductInCart) {
-            // Borrar Rey
-            console.log("si señor")
-            
-          } else {
+            product.quantity= isProductInCart.quantity+1
+            const options={
+              method:"PUT",
+              headers: {'Content-Type': 'application/json'},
+              data: JSON.stringify(product)
+            }
+           const res = await axios(`http://localhost:5000/cart/${product.id}`, options)
 
-            console.log("no papu")
+          } else {
+            // Si no esta en el carrito, seteo la cantidad en 1 y lo agrego
+            product.quantity = 1
+            
             const options={
               method:"POST",
               headers: {'Content-Type': 'application/json'},
               data: JSON.stringify(product)
             }
-            const res = await axios("http://localhost:5000/cart", options),
-            resproducto= await res.data
-            //Borrar Rey
-            if (resproducto) {
-              alert("Producto Agregado!")
-            } else {
-              console.log("fallo la agrega")
-            }
-          
+            const res = await axios("http://localhost:5000/cart", options)
+            
           }
-         
-
-
-         
           
-          //dispatch({type: TYPES.ADD_TO_CART, payload: resproducto.id})
-
-
+          dispatch({type: TYPES.ADD_TO_CART, payload: product.id})
+          alert("Producto Agregado!")
+        
         }
 
         const delFromCart = (id, all = false) => {
           if (all) {
-            dispatch ({type: dispatch({type: TYPES.REMOVE_ALL_PRODUCTS, payload : id})})
+            dispatch ({type: TYPES.REMOVE_ALL_PRODUCTS, payload : id})
           } else {
+
             dispatch ({type: TYPES.REMOVE_ONE_PRODUCT, payload : id})
           }
         }

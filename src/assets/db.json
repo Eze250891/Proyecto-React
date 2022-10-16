@@ -48,13 +48,13 @@
   ],
   "cart": [
     {
-      "id": 3,
-      "img": "https://raw.githubusercontent.com/Eze250891/Proyecto-React/main/src/graphics/imagenes/productos/leonetti_azul1.jpg",
-      "title": "leonetti azul",
-      "instalments": "$14.400",
-      "price": "43000",
-      "product": "https://www.leonetti.com.ar/productos/zapato-vicenza-azul/",
-      "quantity": "0"
+      "id": 1,
+      "img": "https://raw.githubusercontent.com/Eze250891/Proyecto-React/main/src/graphics/imagenes/productos/leonetti_roma1.jpg",
+      "title": "leonetti arezzo",
+      "instalments": "$8.300",
+      "price": "25000",
+      "product": "https://www.leonetti.com.ar/productos/zapato-arezzo1",
+      "quantity": 3
     },
     {
       "id": 2,
@@ -63,7 +63,25 @@
       "instalments": "$10.700",
       "price": "32000",
       "product": "https://www.leonetti.com.ar/productos/zapato-faro/",
-      "quantity": "0"
+      "quantity": 2
+    },
+    {
+      "id": 3,
+      "img": "https://raw.githubusercontent.com/Eze250891/Proyecto-React/main/src/graphics/imagenes/productos/leonetti_azul1.jpg",
+      "title": "leonetti azul",
+      "instalments": "$14.400",
+      "price": "43000",
+      "product": "https://www.leonetti.com.ar/productos/zapato-vicenza-azul/",
+      "quantity": 2
+    },
+    {
+      "id": 5,
+      "img": "https://raw.githubusercontent.com/Eze250891/Proyecto-React/main/src/graphics/imagenes/productos/leonetti_ronald1.jpg",
+      "title": "leonetti kenai",
+      "instalments": "$18.200",
+      "price": "54500",
+      "product": "https://www.leonetti.com.ar/productos/zapato-kenai/",
+      "quantity": 1
     }
   ]
 }
