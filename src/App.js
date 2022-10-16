@@ -7,6 +7,7 @@ import aa from "./components/organisms/Seccion5"
 // import CardSeccion from "./components/organisms/CardSeccion";
 import Carrousel from "./components/molecules/Carrousel";
 import ShoppingCart from "./components/organisms/ShoppingCart";
+import Seccion4 from "./components/organisms/Seccion4.jsx";
 
 
 
@@ -17,6 +18,7 @@ function App() {
     
     <ShoppingCart/>
     <Seccion3/>
+    <Seccion4/>
     <Carrousel/>
     <Seccion5/>
     <Footer/>
