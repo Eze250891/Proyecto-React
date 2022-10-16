@@ -49,7 +49,7 @@ export function shoppingReducer (state, action) {
             case TYPES.REMOVE_ONE_PRODUCT: {
                  const itemToDelete = state.cart.find(item => item.id === action.payload)
 
-                 console.log(itemToDelete)
+                 
                     
                 return itemToDelete.quantity > 1
                     ? {

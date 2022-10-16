@@ -126,7 +126,7 @@ const Navbar = (props) => {
           {
             cart.map((item, index) => <CartItem 
                 key={index}
-                data={item}
+                item={item}
                 delFromCart={delFromCart}
             />)
           }
