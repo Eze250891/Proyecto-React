@@ -27,7 +27,7 @@ const Navbar = (props) => {
   items-center
   justify-between
   py-2
-  bg-pastelColor
+  bg-navbarColor
   text-gray-500
   navbar navbar-expand-lg navbar-light
   ">
@@ -64,19 +64,19 @@ const Navbar = (props) => {
   {/* <!-- Left links --> */}
   <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary text-fontprimary" href="!#">Vintage Gentleman</a>
+      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary font-bold text-lg" href="!#">Vintage Gentleman</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary text-fontprimary" href="!#">Guia de talles</a>
+      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary font-bold text-lg" href="!#">Guia de talles</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary" href="!#">Sucursales</a>
+      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary font-bold text-lg" href="!#">Sucursales</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary" href="!#">Nosotros</a>
+      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary font-bold text-lg" href="!#">Nosotros</a>
     </li>
     <li className="nav-item p-2">
-      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary" href="!#">Contacto</a>
+      <a className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0 text-fontPrimary font-bold text-lg" href="!#">Contacto</a>
     </li>
   </ul>
   {/* <!-- Left links --> */}
@@ -119,10 +119,10 @@ const Navbar = (props) => {
     { isVisible && (
 
 
-  <div className='bg-skinColor flex justify-center w-full '>
+      <div className='bg-[#FDD59A] flex flex-col items-center justify-center w-full  '>
+        <h3 className='p-1 underline decoration-1 text-lg font-bold'>Tu carrito</h3>
     
-        <div className="bg-primary w-64 md:w-72 text-center">
-          <h3>Carrito de compras</h3>
+        <div className="bg-primary w-2/4 md:w-72 text-center text-fontSecondary font-bold text-sm m-2 flex flex-row  justify-center  items-center">
           {
             cart.map((item, index) => <CartItem 
                 key={index}
@@ -130,8 +130,8 @@ const Navbar = (props) => {
                 delFromCart={delFromCart}
             />)
           }
-          <button onClick={() => clearCart()}> Limpiar carrito</button>
           </div>
+          <button onClick={() => clearCart()} className="border-black border-2 rounded-md w-2/4 font-bold text-sm mt-2"> Limpiar carrito</button>
 
     </div>
   

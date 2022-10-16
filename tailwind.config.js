@@ -15,8 +15,10 @@ module.exports = {
       darkSkinColor: "#7f1d1d",
       black: "black",
       darkGrey: "#15141c",
-      'primary': "#957C65",
-      white: "white"
+      fontPrimary: "#957C65",
+      fontSecondary:"#191919",
+      white: "white",
+      navbarColor: "#4E231B"
      
     },
     extend: {},

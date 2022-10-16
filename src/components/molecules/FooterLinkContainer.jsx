@@ -16,7 +16,7 @@ import logoWhatsapp from '../../graphics/imagenes/iconos/iconoWhatsapp.png'
 
 const FooterLinkContainer = () => {
   return (
-    <div className='bg-skinColor flex flex-col h-96 justify-center
+    <div className='bg-white flex flex-col h-96 justify-center
                     
                     md:flex-row md:flex-wrap md:h-48'>
                         

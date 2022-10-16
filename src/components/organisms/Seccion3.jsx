@@ -4,8 +4,8 @@ import gentlemen3 from '../../graphics/imagenes/Varios/gentlemen3.png'
 
 function Seccion3(){
   return (
-    <div className='flex bg-backgroundSeccion3 justify-center'>
-        <img className='w-64' src={gentlemen3} alt="" />
+    <div className='flex bg-backgroundSeccion3 justify-center p-16'>
+        <img className='w-80' src={gentlemen3} alt="" />
     </div>
   )
 }

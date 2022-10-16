@@ -15,13 +15,13 @@ const Card = (props) => {
       </div>
 
       <div className="flex-col w-auto p-5 text-center">
-        <h2 className="mb-3 font-extralight text-2xl capitalize text-[#fefce8]">{value.title}</h2>
-          <p className="font-sans text-2xl font-light text-[#fefce8]">${value.price}</p>
+        <h2 className="mb-3 font-extralight text-2xl capitalize text-fontSecondary">{value.title}</h2>
+          <p className="font-sans text-2xl font-light text-fontSecondary">${value.price}</p>
       </div>
       <div className="flex-col w-auto p-5 mt-3 font-sans text-center text-zinc-600">
           <p>
-            <span className="text-base md:text-sm capitalize font-extralight text-[#fefce8]">3 cuotas sin interés de {value.instalments}<br /></span>
-            <span className="text-xs font-bold text-[#fefce8]">Efectivo/Transferencia (5% OFF)</span>
+            <span className="text-base md:text-sm capitalize font-extralight text-fontSecondary">3 cuotas sin interés de {value.instalments}<br /></span>
+            <span className="text-xs font-bold text-fontSecondary">Efectivo/Transferencia (5% OFF)</span>
           </p>
       </div>
     </div>
