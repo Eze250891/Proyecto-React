@@ -12,6 +12,7 @@ import CardSeccion from "./CardSeccion";
 import React from "react";
 import Navbar from "./navbar";
 import axios from "axios";
+import Main from "./Main";
 
 const ShoppingCart = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
@@ -130,8 +131,9 @@ const ShoppingCart = () => {
   return (
     <>
       <Navbar cart={cart} delFromCart={delFromCart} clearCart={clearCart} />
-
+      <Main/>
       <CardSeccion products={products} addToCart={addToCart} />
+      
     </>
   );
 };

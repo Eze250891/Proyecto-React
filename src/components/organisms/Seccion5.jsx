@@ -1,7 +1,11 @@
 import React from 'react'
 import imagenSec5 from '../../graphics/imagenes/Varios/images2.jpg'
-function Seccion5() {
+
+
+
+const Seccion5 = () => {
   return (
+    
     <div className='w-screen flex bg-backgroundSeccion5 items-center p-8 gap-3 flex-col  md:flex-row md:justify-center'>
         <img className='h-96 shadow-md rounded-md border-2 border-white' src={imagenSec5} alt="" />
         <div className='text-white text-base font-normal md:w-1/3'>
@@ -23,3 +27,4 @@ function Seccion5() {
 }
 
 export default Seccion5
+
