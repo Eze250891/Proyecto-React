@@ -12,7 +12,7 @@ import img3 from '../../graphics/imagenes/Varios/img3Seccion4.jpg'
 
 const Seccion4 = () => {
   return (
-    <div className='w-screen flex bg-[#957C65] items-center p-8 gap-3 flex-col  md:flex-row md:justify-center'>
+    <div className='w-full flex bg-[#957C65] items-center p-8 gap-3 flex-col  md:flex-row md:justify-center'>
     
             <div className='p-2 mt-2 flex-auto w-64'>
                 <h3 className='text-fontSecondary sm:text-lg sm:ml-5 sm:mt-9 md:text-lg lg:text-lg 2xl:text-lg font-bold '>Titulo 1</h3>

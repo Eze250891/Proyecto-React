@@ -20,10 +20,12 @@ const Navbar = (props) => {
   return (
     <>
     <nav className="
-  sticky top-0
+  relative top-0
   z-40
   w-full
-  flex flex-wrap
+  h-auto
+
+  flex flex-col
   items-center
   justify-between
   py-2
@@ -119,10 +121,11 @@ const Navbar = (props) => {
     { isVisible && (
 
 
-      <div className='bg-[#FDD59A] flex flex-col items-center justify-center w-full  '>
-        <h3 className='p-1 underline decoration-1 text-lg font-bold'>Tu carrito</h3>
-    
-        <div className="bg-primary w-2/4 md:w-72 text-center text-fontSecondary font-bold text-sm m-2 flex flex-row  justify-center  items-center">
+      <div className='bg-[#FDD59A] flex flex-col items-center justify-center w-full h-auto relative '>
+        <div className=''>
+        <h3 className='underline decoration-1 text-lg font-bold'>Tu carrito</h3>
+        </div>
+        <div className="text-center font-bold text-sm m-1 md:flex md:flex-row md:flex-wrap  justify-center grid grid-cols-4  ">
           {
             cart.map((item, index) => <CartItem 
                 key={index}
@@ -131,8 +134,9 @@ const Navbar = (props) => {
             />)
           }
           </div>
-          <button onClick={() => clearCart()} className="border-black border-2 rounded-md w-2/4 font-bold text-sm mt-2"> Limpiar carrito</button>
-
+          <div className=''>
+          <button onClick={() => clearCart()} className="border-black border-2 rounded-md font-bold text-sm mb-3"> Limpiar carrito</button>
+          </div>
     </div>
   
     )
