@@ -20,7 +20,8 @@ const Navbar = (props) => {
   return (
     <>
     <nav className="
-  relative top-0
+  relative
+  md:sticky top-0
   z-40
   w-full
   h-auto
